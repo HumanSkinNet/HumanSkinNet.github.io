@@ -110,41 +110,48 @@
 
 <section class="section">
 	<div class="container is-max-desktop">
-  
 	  <!-- Animation. -->
 	  <div class="columns is-centered">
 		<div class="column is-full-width">
 		  <h2 class="title is-3 has-text-centered">Animation Demo</h2>
   
-		  <!-- Interpolating and Matting Side by Side. -->
+		  <!-- Ours, HeterSkinNet, and RigNet Side by Side. -->
 		  <div class="columns is-centered">
-			<div class="column is-half">
+			<div class="column has-text-centered">
 			  <div class="content">
 				<h2 class="title is-3">Ours</h2>
 				<video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
-				  <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
+				  <source src="./static/videos/book.mp4" type="video/mp4">
 				</video>
 			  </div>
 			</div>
   
-			<div class="column is-half">
-			  <h2 class="title is-3">HeterSkinNet</h2>
+			<div class="column has-text-centered">
 			  <div class="content">
+				<h2 class="title is-3">HeterSkinNet</h2>
 				<video id="matting-video" controls playsinline width="100%">
-				  <source src="./static/videos/matting.mp4" type="video/mp4">
+				  <source src="./static/C.mp4" type="video/mp4">
+				</video>
+			  </div>
+			</div>
+  
+			<div class="column has-text-centered">
+			  <div class="content">
+				<h2 class="title is-3">RigNet</h2>
+				<video id="rig-net-video" controls playsinline width="100%">
+				  <source src="./static/chair-tp.mp4" type="video/mp4">
 				</video>
 			  </div>
 			</div>
 		  </div>
-		  <!--/ Interpolating and Matting Side by Side. -->
+		  <!-- Ours, HeterSkinNet, and RigNet Side by Side. -->
   
 		</div>
 	  </div>
 	  <!--/ Animation. -->
   
 	</div>
-  </section>
-
+</section>
 
 </body>
 </html>
