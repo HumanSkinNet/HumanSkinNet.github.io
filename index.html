@@ -109,138 +109,96 @@
 
 
 <section class="section">
-	<div class="container is-max-desktop">
-	  <!-- Animation. -->
-	  <div class="columns is-centered">
-		<div class="column is-full-width">
-		  <h2 class="title is-3 has-text-centered">Animation Demo</h2>
-  
-		  <!-- First Row: Interpolating, Matting, and RigNet -->
-		  <div class="columns is-centered">
-			<div class="column has-text-centered">
-			  <div class="content">
-				<h2 class="title is-4">Ours</h2>
-				<video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
-				  <source src="./static/videos/book.mp4" type="video/mp4">
-				</video>
-			  </div>
-			</div>
-  
-			<div class="column has-text-centered">
-			  <div class="content">
-				<h2 class="title is-4">HeterSkinNet</h2>
-				<video id="matting-video" controls playsinline width="100%">
-				  <source src="./static/videos/coffee.mp4" type="video/mp4">
-				</video>
-			  </div>
-			</div>
-  
-			<div class="column has-text-centered">
-			  <div class="content">
-				<h2 class="title is-4">RigNet</h2>
-				<video id="rig-net-video" controls playsinline width="100%">
-				  <source src="./static/videos/chair-tp.mp4" type="video/mp4">
-				</video>
-			  </div>
-			</div>
-		  </div>
-		  <!--/ First Row -->
-  
-		  <!-- Second Row: Additional Videos (Replace with actual video IDs and sources) -->
-		  <div class="columns is-centered">
-			<div class="column has-text-centered">
-			  <div class="content">
-				<video id="additional-video-1" controls playsinline width="100%">
-				  <source src="./static/videos/steve.mp4" type="video/mp4">
-				</video>
-			  </div>
-			</div>
-  
-			<div class="column has-text-centered">
-			  <div class="content">
-				<video id="additional-video-2" controls playsinline width="100%">
-				  <source src="./static/videos/shiba.mp4" type="video/mp4">
-				</video>
-			  </div>
-			</div>
-  
-			<div class="column has-text-centered">
-			  <div class="content">
-				<video id="additional-video-3" controls playsinline width="100%">
-				  <source src="./static/videos/fullbody.mp4" type="video/mp4">
-				</video>
-			  </div>
-			</div>
-		  </div>
-		  <!--/ Second Row -->
-  
-		</div>
-	  </div>
-	  <!--/ Animation. -->
-  
-	</div>
+    <div class="container is-max-desktop">
+        <!-- Skeleton Demo Title -->
+        <div class="columns is-centered">
+            <div class="column is-full-width">
+                <h2 class="title is-3 has-text-centered">Skeleton Demo</h2>
+
+                <!-- First Row -->
+                <div class="columns is-centered">
+                    <!-- Mesh Video Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <h2 class="title is-4">Mesh</h2>
+                            <video id="dollyzoom" autoplay controls muted loop playsinline width="100%">
+                                <source src="./static/videos/book.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Skeleton Image Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <h2 class="title is-4">Skeleton</h2>
+                            <img src="./static/images/boy_d_yiyu_-skin_others_skel.png" alt="Skeleton Image" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <!--/ First Row -->
+
+                <!-- Second Row -->
+                <div class="columns is-centered">
+                    <!-- Mesh Video Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <video id="additional-video-1" controls playsinline width="100%">
+                                <source src="./static/videos/steve.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Skeleton Image Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <img src="./static/images/joseph_e_zongcai_skin02_others_skel.png" alt="Skeleton Image" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <!--/ Second Row -->
+
+                <!-- Third Row -->
+                <div class="columns is-centered">
+                    <!-- Mesh Video Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <video id="additional-video-3" controls playsinline width="100%">
+                                <source src="./static/videos/example3.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Skeleton Image Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <img src="./static/images/wuchang_e_dongfeng_skin_others_skel.png" alt="Skeleton Image" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <!--/ Third Row -->
+
+                <!-- Fourth Row -->
+                <div class="columns is-centered">
+                    <!-- Mesh Video Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <video id="additional-video-4" controls playsinline width="100%">
+                                <source src="./static/videos/example4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <!-- Skeleton Image Column -->
+                    <div class="column has-text-centered">
+                        <div class="content">
+                            <img src="./static/images/bonbon_e_duck_skin_others_skel.png" alt="Skeleton Image" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <!--/ Fourth Row -->
+
+            </div>
+        </div>
+        <!--/ Skeleton Demo Title End -->
+
+    </div>
 </section>
-
-<section class="section">
-	<div class="container is-max-desktop">
-		<!-- Skeleton Demo -->
-		<div class="columns is-centered">
-			<div class="column is-full-width">
-				<h2 class="title is-3 has-text-centered">Skeleton Demo</h2>
-
-				<!-- First Row of .OBJ and Images -->
-				<div class="columns is-centered">
-					<div class="column has-text-centered">
-						<div class="content">
-							<div id="canvas-container1"></div>
-							<script>
-								function loadObjModel(containerId, objFilePath) {
-									const container = document.getElementById(containerId);
-									const width = container.clientWidth;
-									const height = width; // Make height equal to width for a square display area
-
-									const scene = new THREE.Scene();
-									const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-									const renderer = new THREE.WebGLRenderer();
-									renderer.setSize(width, height);
-									container.appendChild(renderer.domElement);
-
-									const loader = new THREE.OBJLoader();
-									loader.load(objFilePath, function (object) {
-										scene.add(object);
-										object.position.z = -5;
-									});
-
-									const light = new THREE.DirectionalLight(0xffffff, 1);
-									light.position.set(0, 1, 1).normalize();
-									scene.add(light);
-
-									function animate() {
-										requestAnimationFrame(animate);
-										renderer.render(scene, camera);
-									}
-
-									animate();
-								}
-
-								loadObjModel('canvas-container1', './static/obj/paganini_e_xianwei_skin_others.obj');
-							</script>
-						</div>
-					</div>
-					<div class="column has-text-centered">
-						<div class="content">
-							<img src="./static/skel/paganini_e_xianwei_skin_others.png" alt="Skeleton 1" width="100%">
-						</div>
-					</div>
-				</div>
-				<!--/ First Row -->
-
-			</div>
-		</div>
-		<!--/ Skeleton Demo -->
-	</div>
-</section>
-
 
 </body>
 </html>
