@@ -181,6 +181,65 @@
 	</div>
 </section>
 
+<section class="section">
+	<div class="container is-max-desktop">
+		<!-- Skeleton Demo -->
+		<div class="columns is-centered">
+			<div class="column is-full-width">
+				<h2 class="title is-3 has-text-centered">Skeleton Demo</h2>
+
+				<!-- First Row of .OBJ and Images -->
+				<div class="columns is-centered">
+					<div class="column has-text-centered">
+						<div class="content">
+							<div id="canvas-container1"></div>
+							<script>
+								function loadObjModel(containerId, objFilePath) {
+									const container = document.getElementById(containerId);
+									const width = container.clientWidth;
+									const height = width; // Make height equal to width for a square display area
+
+									const scene = new THREE.Scene();
+									const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+									const renderer = new THREE.WebGLRenderer();
+									renderer.setSize(width, height);
+									container.appendChild(renderer.domElement);
+
+									const loader = new THREE.OBJLoader();
+									loader.load(objFilePath, function (object) {
+										scene.add(object);
+										object.position.z = -5;
+									});
+
+									const light = new THREE.DirectionalLight(0xffffff, 1);
+									light.position.set(0, 1, 1).normalize();
+									scene.add(light);
+
+									function animate() {
+										requestAnimationFrame(animate);
+										renderer.render(scene, camera);
+									}
+
+									animate();
+								}
+
+								loadObjModel('canvas-container1', './static/obj/paganini_e_xianwei_skin_others.obj');
+							</script>
+						</div>
+					</div>
+					<div class="column has-text-centered">
+						<div class="content">
+							<img src="./static/skel/paganini_e_xianwei_skin_others.png" alt="Skeleton 1" width="100%">
+						</div>
+					</div>
+				</div>
+				<!--/ First Row -->
+
+			</div>
+		</div>
+		<!--/ Skeleton Demo -->
+	</div>
+</section>
 
 
 </body>
