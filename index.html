@@ -35,6 +35,26 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .video-wrapper, .image-wrapper {
+      width: 19%; /* 一行五列 */
+      display: inline-block;
+      box-sizing: border-box;
+      margin: 0.5%;
+    }
+    .video-wrapper video, .image-wrapper img {
+      width: 100%;
+      height: auto; /* 保持纵横比 */
+    }
+    .section .container {
+        max-width: 90%; /* 调整为 90% 或其他合适的值 */
+        margin: 0 auto;
+    }
+  </style>
+
+
+
 </head>
 <body>
 
